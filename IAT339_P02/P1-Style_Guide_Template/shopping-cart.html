@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class = "heading-and-cart">
+            <a class = "shop-name" href= "product-listing.html"><h1>CYBERDAZE</h1></a>
+            <div class="shopping-cart">
+                <a class="shopping-cart-icon" href="shopping-cart.html"><img src="img/cart.png" alt="Shopping cart icon." width = "20"></a>
+                <a class = "in-text-link" href = "shopping-cart.html">Shopping<br>Cart</a>
+            </div>
+        </div>
+        <nav>
+            <div class="menu">
+                <ul>
+                  <li class="dropdown">
+                    <a class="dropbtn" href="product-listing.html">Shop</a>
+                    <div class="dropdown-content">
+                      <a class="button-nav" href="#">Jewelry</a>
+                      <a class="button-nav" href="#">Hats</a>
+                      <a class="button-nav" href="#">Bags</a>
+                      <a class="button-nav" href="#">Glasses</a>
+                      <a class="button-nav" href="#">Misc</a>
+                    </div>
+                  </li>
+                  <li><a class="button-nav" href="#">What's New</a></li>
+                  <li><a class="button-nav" href="#">About</a></li>
+                  <li><a class="button-nav" href="#">Contact Us</a></li>
+                </ul>
+              </div>
+        </nav>
+    </header>
+
+    <h2>Shopping Cart</h2>
+    
+        <table class="checkout-cart">
+          <!-- headings -->
+          <thead>
+            <tr>
+              <th>Product Image</th>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- product 1 -->
+            <tr>
+              <td><img src="img/silver-heart-necklace.jpg" alt="A silver heart necklace." width = "200"></td>
+              <td>Silver Heart Necklace</td>
+              <td>$17.00</td>
+              <td>2</td>
+              <td>$34.00</td>
+            </tr>
+        
+            <!-- product 2 -->
+            <tr>
+              <td><img src="img/pink-dotted-sunglasses.jpg" alt="A pair of pink sunglasses." width = "200"></td>
+              <td>Pink Dotted Sunglasses</td>
+              <td>$23.00</td>
+              <td>1</td>
+              <td>$23.00</td>
+            </tr>
+          </tbody>
+
+          <!-- total amount -->
+          <tfoot>
+            <tr>
+              <td>Total:</td>
+              <td>$57.00</td>
+            </tr>
+          </tfoot>
+        </table>
+        
+        <form method="post" action="checkout.html">
+          <button type = "submit" value = "Submit">Proceed to Checkout</button>
+        </form>
+    
+</body>
+</html>

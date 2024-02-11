@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P01 - Style Guide Template</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk&display=swap" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>P01 - Style Guide Template</h1>
+
+      <p>A template you can use to start building out your own style guides with.</p>
+
+
+      <nav>        
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="product-listing.html">Product Listing Template</a>
+        <a href="checkout.html">Checkout Template</a>
+        <a href="#citations">Citations</a>
+        <a href="#branding">Branding</a>
+      </nav>
+    </header>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+
+      <!--In-text link, referred to button code below-->
+      <section class="element">
+        <h3>In-text link</h3>
+        <h4>CSS selector:</h4>
+        <p>.in-text-link</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;Check out our new items &lt;a class = "in-text-link" href = "#in_text_link"&gt;here.&lt;/a&gt;&lt;/p&gt;</code>
+
+        <h4>Rendered element:</h4>
+
+        <p>Check out our new items <a class = "in-text-link" href = "#in_text_link">here.</a></p>
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button-nav"&gt;Shop&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Shop</a>
+
+      </section>
+
+      <!-- Submit and reset buttons, referred to https://www.w3schools.com/tags/att_button_type.asp -->
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+        <h4>CSS selector:</h4>
+        <p>form button</p>
+
+        <h4>Sample code:</h4>
+        <pre>
+          <code>
+            &lt;form method="post" action="#"&gt;
+              &lt;button type = "submit" value = "Submit"&gt;Submit&lt;/button&gt;
+              &lt;button type = "reset" value = "Reset"&gt;Reset&lt;/button&gt;
+            &lt;/form&gt;
+          </code>
+        </pre>
+
+        <h4>Rendered element:</h4>
+        <form method="post" action="#">
+          <button type = "submit" value = "Submit">Submit</button>
+          <button type = "reset" value = "Reset">Reset</button>
+        </form>
+
+      </section>
+
+
+      <!--text input field with label, referred to HTML Basics Completed file from week 1-->
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+        <h4>CSS selector:</h4>
+        <p>form</p>
+        <!-- source for indenting the code: https://stackoverflow.com/questions/21646408/how-do-i-use-indentation-in-a-code-tag -->
+        <h4>Sample code:</h4>
+        <pre>
+          <code>
+            &lt;form method="post" action="#"&gt;
+              &lt;label for="form">City:&lt;/label&gt;
+              &lt;input type="text" id="form" placeholder="Type your city here"&gt;
+            &lt;/form&gt;
+          </code>
+        </pre>
+
+        <h4>Rendered element:</h4>
+        <form method="post" action="#">
+          <!-- the label for the city during checkout -->
+          <label for="form">City: </label> 
+          <!-- A textbox for user to input text, placeholder text tells user what to type -->
+          <input type="text" id="form" placeholder="Type your city here">
+        </form>
+
+      </section>
+
+      <!-- Radio button with label, referred to https://www.w3schools.com/tags/att_input_type_radio.asp -->
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+        <h4>CSS selector:</h4>
+        <p>form</p>
+        <h4>Sample Code:</h4>
+        <pre>
+          <code>
+            &lt;form method="post" action="#"&gt;
+              &lt;input type="radio" id="form-colour" name="colour" value="Blue"&gt;
+              &lt;label for="form-colour"&gt;Blue&lt;/label&gt;
+            &lt;/form&gt;
+          </code>
+        </pre>
+
+        <h4>Rendered Element:</h4>
+        <form method="post" action="#">
+          <input type="radio" id="form-colour" name="colour" value="Blue">
+          <label for="form-colour">Blue</label>
+        </form>
+
+      </section>
+
+
+      <!--Image as a Link, referred to https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image -->
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <h4>CSS selector:</h4>
+        <p>.image-as-link</p>
+        <h4>Sample Code:</h4>
+        <code>&lt;a class="image-as-link" href="#"&gt;&lt;img src="img/silver-heart-necklace.jpg" alt="A beaded silver heart necklace."&gt;&lt;/a&gt;/&lt;code&gt;</code>
+        <h4>Rendered Element:</h4>
+        <!-- img tag inside anchor -->
+        <a class="image-as-link" href="#"><img src="img/silver-heart-necklace.jpg" alt="A beaded silver heart necklace."></a>
+
+
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+
+        <h4>Heading 1</h4>
+        <h4>CSS selector:</h4>
+        <p>h1</p>
+        <h4>Sample code:</h4>
+        <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code>
+        <h4>Rendered Element:</h4>
+        <h1>Heading 1</h1>
+
+        <h4>Heading 2</h4>
+        <h4>CSS selector:</h4>
+        <p>h2</p>
+        <h4>Sample code:</h4>
+        <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code>
+        <h4>Rendered Element:</h4>
+        <h2>Heading 2</h2>
+
+        <h4>Heading 3</h4>
+        <h4>CSS selector:</h4>
+        <p>h3</p>
+        <h4>Sample code:</h4>
+        <code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code>
+        <h4>Rendered Element:</h4>
+        <h3>Heading 3</h3>
+
+        <h4>Heading 4</h4>
+        <h4>CSS selector:</h4>
+        <p>h4</p>
+        <h4>Sample code:</h4>
+        <code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code>
+        <h4>Rendered Element:</h4>
+        <h4>Heading 4</h4>
+
+      </section>
+
+
+
+
+      <!--paragraphs, referred to lecture slides-->
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <h4>CSS selector:</h4>
+        <p>p</p>
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;This store sells vintage and Y2K accessories.  A variety of styles and colours are available to match whatever outfit you wear!&lt;/p&gt;</code>
+        <h4>Rendered Element:</h4>
+        <p>This store sells vintage and Y2K accessories.  A variety of styles and colours are available to match whatever outfit you wear!</p>
+
+      </section>
+
+      <!-- numbered lists, referred to https://www.w3schools.com/html/html_lists_ordered.asp -->
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <h4>CSS selector:</h4>
+        <p>ol</p>
+        <h4>Sample Code:</h4>
+        <pre>
+          <code>
+            &lt;ol type="1"&gt;
+              &lt;li>Product 1&lt;/li&gt;
+              &lt;li>Product 2&lt;/li&gt;
+              &lt;li>Product 3&lt;/li&gt;
+            &lt;/ol&gt;
+          </code>
+        </pre>
+        <h4>Rendered Element:</h4>
+        <ol type="1">
+          <li>Product 1</li>
+          <li>Product 2</li>
+          <li>Product 3</li>
+        </ol>
+
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button-nav"&gt;Shop&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="button-nav"&gt;What's New&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="button-nav"&gt;About&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="button-nav"&gt;Contact Us&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <!-- main information (dropdown under shop for the categories) -->
+        <!-- <a class="button-nav" href="#">Shop</a>
+        <a class="button-nav" href="#">What's New</a>
+        <a class="button-nav" href="#">About</a>
+        <a class="button-nav" href="#">Contact Us</a> -->
+
+        <!-- https://www.w3schools.com/Css/css_navbar_horizontal.asp -->
+        <!-- new menu -->
+        <div class="menu">
+          <ul>
+            <li class="dropdown">
+              <a class="dropbtn" href="#">Shop</a>
+              <div class="dropdown-content">
+                <a class="button-nav" href="#">Jewelry</a>
+                <a class="button-nav" href="#">Hats</a>
+                <a class="button-nav" href="#">Bags</a>
+                <a class="button-nav" href="#">Glasses</a>
+                <a class="button-nav" href="#">Misc</a>
+              </div>
+            </li>
+            <li><a class="button-nav" href="#">What's New</a></li>
+            <li><a class="button-nav" href="#">About</a></li>
+            <li><a class="button-nav" href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+
+      </section>
+
+      <!-- product listing -->
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+        <h4>CSS selector:</h4>
+        <p>.product-listing</p>
+
+        <h4>Sample code:</h4>
+        <pre>
+          <code>
+            &lt;div class = "product-listing"&gt;
+              &lt;a class="image-as-link" href="#"&gt;&lt;img src="img/silver-heart-necklace.jpg" alt="A beaded silver heart necklace."&gt;&lt;/a&gt;
+              &lt;a class = "in-text-link" href = "#in_text_link"&gt;&lt;h3&gt;Silver Heart Necklace&lt;/h3&gt;&lt;/a&gt;
+              &lt;h4&gt;$17.00&lt;/h4&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+
+        <h4>Rendered element:</h4>
+        <div class = "product-listing">
+          <a class="image-as-link" href="#"><img src="img/silver-heart-necklace.jpg" alt="A beaded silver heart necklace."></a>
+          <a class = "in-text-link" href = "#in_text_link"><h3>Silver Heart Necklace</h3></a>
+          <h4>$17.00</h4>
+        </div>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Payment Form</h3>
+        <h4>CSS selector:</h4>
+        <p>.payment-form</p>
+
+        <h4>Sample code:</h4>
+        <pre>
+          <code>
+            &lt;form class = "payment-form" method="post" action="#"&gt;
+
+              &lt;h3&gt;Shipping Information&lt;/h3&gt;
+
+              &lt;label for="form-email"&gt;Email Address&lt;/label&gt;
+              &lt;input type="text" id="form-email" placeholder="Email Address"&gt;
+            
+              &lt;label for="form-first-name"&gt;First Name&lt;/label&gt; 
+              &lt;input type="text" id="form-first-name" placeholder="First name"&gt;
+            
+              &lt;label for="form-last-name"&gt;Last name&lt;/label&gt;
+              &lt;input type="text" id="form-last-name" placeholder="Last name"&gt;
+            
+              &lt;label for="form-address"&gt;Address&lt;/label&gt;
+              &lt;input type="text" id="form-address" placeholder="Address"&gt;
+            
+              &lt;label for="form-city"&gt;City&lt;/label&gt;
+              &lt;input type="text" id="form-city" placeholder="City"&gt;
+            
+              &lt;label for="form-province"&gt;Province / State&lt;/label&gt;
+              &lt;input type="text" id="form-province" placeholder="Province / State"&gt;
+            
+              &lt;label for="form-postal-code"&gt;Postal / ZIP Code&lt;/label&gt;
+              &lt;input type="text" id="form-postal-code" placeholder="Postal / ZIP Code"&gt;
+            
+              &lt;label for="form-country"&gt;Country&lt;/label&gt;
+              &lt;input type="text" id="form-country" placeholder="Country"&gt;
+            
+              &lt;label for="form-phone"&gt;Phone&lt;/label&gt;
+              &lt;input type="text" id="form-phone" placeholder="Phone"&gt;
+          
+              &lt;h3&gt;Payment Method&lt;/h3&gt;
+
+              &lt;label for="form-card-name"&gt;Name on Card&lt;/label&gt;
+              &lt;input type="text" id="form-card-name" placeholder="Name on Card"&gt;
+
+              &lt;label for="form-card-number"&gt;Card Number&lt;/label&gt;
+              &lt;input type="text" id="form-card-number" placeholder="XXXX-XXXX-XXXX-XXXX"&gt;
+
+              &lt;label for="form-card-exp"&gt;Expiration Date&lt;/label&gt;
+              &lt;input type="text" id="form-card-exp" placeholder="MM / YY"&gt;
+
+              &lt;label for="form-card-cvv"&gt;CVV&lt;/label&gt;
+              &lt;input type="text" id="form-card-cvv" placeholder="CVV"&gt;
+
+              &lt;button type = "submit" value = "Submit"&gt;Submit&lt;/button&gt;
+
+            &lt;/form&gt;
+          </code>
+        </pre>
+      
+        <!-- Referred to https://www.w3schools.com/tags/att_button_type.asp and HTML Basics file-->
+        <h4>Rendered Element:</h4>
+
+        <form class = "payment-form" method="post" action="#">
+          <h2>Checkout</h2>
+
+          <fieldset class = "shipping-information">
+            <!-- Shipping information -->
+            <h3>Shipping Information</h3>
+
+            <!-- Email -->
+            <label for="form-email">Email Address</label>
+            <input type="text" id="form-email" placeholder="Email Address">
+
+            <div class = "form-name">
+              <!-- First Name -->
+              <label for="form-first-name">First Name</label> 
+              <input type="text" id="form-first-name" placeholder="First name">
+
+              <!-- Last Name -->
+              <label for="form-last-name">Last name</label>
+              <input type="text" id="form-last-name" placeholder="Last name">
+            </div>
+
+            <!-- Address -->
+            <label for="form-address">Address</label>
+            <input type="text" id="form-address" placeholder="Address">
+
+            <!-- City -->
+            <label for="form-city">City</label>
+            <input type="text" id="form-city" placeholder="City">
+
+            <!-- Province or State -->
+            <label for="form-province">Province / State</label>
+            <input type="text" id="form-province" placeholder="Province / State">
+
+            <!-- Postal or ZIP code -->
+            <label for="form-postal-code">Postal / ZIP Code</label>
+            <input type="text" id="form-postal-code" placeholder="Postal / ZIP Code">
+
+            <!-- Country -->
+            <label for="form-country">Country</label>
+            <input type="text" id="form-country" placeholder="Country">
+
+            <!-- Phone number -->
+            <label for="form-phone">Phone</label>
+            <input type="text" id="form-phone" placeholder="Phone">
+
+          </fieldset>
+
+          <fieldset class = "payment-method">
+            <!-- Payment Method -->
+            <h3>Payment Method</h3>
+
+            <!-- Name on card -->
+            <label for="form-card-name">Name on Card</label>
+            <input type="text" id="form-card-name" placeholder="Name on Card">
+
+            <!-- Card number -->
+            <label for="form-card-number">Card Number</label>
+            <input type="text" id="form-card-number" placeholder="XXXX-XXXX-XXXX-XXXX">
+
+            <!-- Exp date -->
+            <label for="form-card-exp">Expiration Date</label>
+            <input type="text" id="form-card-exp" placeholder="MM / YY">
+
+            <!-- CVV -->
+            <label for="form-card-cvv">CVV</label>
+            <input type="text" id="form-card-cvv" placeholder="CVV">
+
+          </fieldset>
+
+          <fieldset class = "form-submit">
+            <!-- submit form -->
+            <button type = "submit" value = "Submit">Place Order</button>
+
+          </fieldset>
+
+        </form>
+
+      </section>
+
+      <!-- Checkout cart, referred to https://www.w3schools.com/html/html_tables.asp -->
+      <section class="element">
+        <!-- checkout cart is in table format -->
+        <h3>Checkout Cart</h3>
+        <h4>CSS selector:</h4>
+        <p>.checkout-cart</p>
+
+        <h4>Sample code:</h4>
+
+        <pre>
+          <code>
+
+            &lt;h3&gt;Checkout Cart&lt;/h3&gt;
+
+            &lt;table class="checkout-cart"&gt;
+
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Product Image&lt;/th&gt;
+                  &lt;th&gt;Product Name&lt;/th&gt;
+                  &lt;th&gt;Price&lt;/th&gt;
+                  &lt;th&gt;Quantity&lt;/th&gt;
+                  &lt;th&gt;Subtotal&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;&lt;img src="img/silver-heart-necklace.jpg" alt="A silver heart necklace." width = "200"&gt;&lt;/td&gt;
+                  &lt;td&gt;Silver Heart Necklace&lt;/td&gt;
+                  &lt;td&gt;$17.00&lt;/td&gt;
+                  &lt;td&gt;2&lt;/td&gt;
+                  &lt;td&gt;$34.00&lt;/td&gt;
+                &lt;/tr&gt;
+
+                &lt;tr&gt;
+                  &lt;td&gt;&lt;img src="img/pink-dotted-sunglasses.jpg" alt="A pair of pink sunglasses." width = "200"&gt;&lt;/td&gt;
+                  &lt;td&gt;Pink Dotted Sunglasses&lt;/td&gt;
+                  &lt;td&gt;$23.00&lt;/td&gt;
+                  &lt;td&gt;1&lt;/td&gt;
+                  &lt;td&gt;$23.00&lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/tbody&gt;
+
+              &lt;tfoot&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Total:&lt;/td&gt;
+                  &lt;td&gt;$57.00&lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/tfoot&gt;
+            &lt;/table&gt;
+
+          </code>
+        </pre>
+
+
+        <h4>Rendered Element:</h4>
+        
+        <h2>Checkout Cart</h2>
+    
+        <table class="checkout-cart">
+          <!-- headings -->
+          <thead>
+            <tr>
+              <th>Product Image</th>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- product 1 -->
+            <tr>
+              <td><img src="img/silver-heart-necklace.jpg" alt="A silver heart necklace." width = "200"></td>
+              <td>Silver Heart Necklace</td>
+              <td>$17.00</td>
+              <td>2</td>
+              <td>$34.00</td>
+            </tr>
+        
+            <!-- product 2 -->
+            <tr>
+              <td><img src="img/pink-dotted-sunglasses.jpg" alt="A pair of pink sunglasses." width = "200"></td>
+              <td>Pink Dotted Sunglasses</td>
+              <td>$23.00</td>
+              <td>1</td>
+              <td>$23.00</td>
+            </tr>
+          </tbody>
+
+          <!-- total amount -->
+          <tfoot>
+            <tr>
+              <td>Total:</td>
+              <td>$57.00</td>
+            </tr>
+          </tfoot>
+        </table>
+        
+        <form method="post" action="#">
+          <button type = "submit" value = "Submit">Proceed to Checkout</button>
+        </form>
+
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>Karsten, Florian. Designer. 2016. <strong>Space Grotesk [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Space+Grotesk?query=space+grotesk">https://fonts.google.com/specimen/Space+Grotesk?query=space+grotesk</a>.</li>
+        <li>Indian Type Foundry. Designer. 2015. <strong>Poppins [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Poppins?query=poppins">https://fonts.google.com/specimen/Poppins?query=poppins</a>.</li>
+        <li><strong>Gradient Cyber Glasses [Image]</strong>. Retrieved from <a href="https://www.pinterest.ca/pin/61431982418516082/">https://www.pinterest.ca/pin/61431982418516082/</a>.</li>
+        <li><strong>Hello Kitty Bracelet [Image]</strong>. Retrieved from <a href="https://www.pinterest.ca/pin/61431982418397844/">https://www.pinterest.ca/pin/61431982418397844/</a>.</li>
+        <li><strong>Silver Crystal Earrings [Image]</strong>. Retrieved from <a href="https://www.pinterest.ca/pin/61431982418397843/">https://www.pinterest.ca/pin/61431982418397843/</a>.</li>
+        <li><strong>White Star Purse [Image]</strong>. Retrieved from <a href="https://www.pinterest.ca/pin/61431982418395569/">https://www.pinterest.ca/pin/61431982418395569/</a>.</li>
+        <li><strong>Denim Spiderweb Cap [Image]</strong>. Retrieved from <a href="https://www.pinterest.ca/pin/61431982418395576/">https://www.pinterest.ca/pin/61431982418395576/</a>.</li>
+        <li><strong>Pink Dotted Sunglasses [Image]</strong>. Retrieved from <a href="https://www.pinterest.ca/pin/61431982418395437/">https://www.pinterest.ca/pin/61431982418395437/</a>.</li>
+        <li>RosaGem Store. Seller. 2023. <strong>Silver Heart Necklace [Image]</strong>. Retrieved from <a href="https://www.aliexpress.com/i/1005006116529772.html">https://www.aliexpress.com/i/1005006116529772.html</a>.</li>
+        <li>Freepik. Designer. <strong>Shopping Cart Icon [Icon]</strong>. Retrieved from <a href="https://www.flaticon.com/free-icon/shopping-cart_263142">https://www.flaticon.com/free-icon/shopping-cart_263142</a>.</li>
+
+      </ul>
+
+    </section>
+
+    <section id="branding">
+      <h2>Branding</h2>
+      <img src="img/branding.png" alt="Branding for Cyberdaze, including typeface, colours, and description." width = "1000">
+      <img src="img/imagery.png" alt="Possible imagery for Cyberdaze, accessory items." width = "1000">
+
+    </section>
+
+
+
+  </body>
+</html>
