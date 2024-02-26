@@ -405,7 +405,6 @@ aside {
 }
 
 .reviews-container {
-  /* border-top: 1px solid #39375b; */
   border-bottom: 1px solid #39375b;
   padding: 1rem; 
 }
@@ -415,6 +414,52 @@ aside {
   margin-bottom: 4rem;
 }
 
+
+/* ALL css for star rating from https://www.codehim.com/html5-css3/css-star-rating-radio-buttons */
+/* placement and colours adjusted for site */
+
+.rate {
+  float: left;
+  height: 46px;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #DC6ACF;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #745C97;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #DC6ACF;
+}
+
+#form-review {
+  height: 10rem;
+  text-align: top;
+  vertical-align: top;
+}
 
 
 

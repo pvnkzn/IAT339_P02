@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
+    <title>Product Review</title>
 
     <link href="css/main.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,53 +40,51 @@
         </nav>
     </header>
 
-    <section id="product-details-content">
-        <aside></aside>
-        <article class="product-details-container">
-            <div class = "product-image">
-                <img src="img/silver-heart-necklace-1.jpg" alt="A beaded silver heart necklace.">
+    <!-- write a review section -->
+    <div class="checkout-container">
+        <h2>Write a Review</h2>
+        <h3>Silver Heart Necklace</h3>
+
+
+        <form class = "payment-form" method="post" action="product-details.html">
+
+            <!-- ALL star rating html from https://www.codehim.com/html5-css3/css-star-rating-radio-buttons -->
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
             </div>
-            <div class = "product-details">
-                <h3>Silver Heart Necklace</h3>
-                <h4>$17.00</h4>
-                <p>This beautiful necklace features a heart-shaped chains, white pearl beads, and a dangling heart charm. This accessory adds charm to outfits ranging from elegant to playful.</p>
-                <form method="post" action="#">
-                    <button type = "submit" value = "Submit">Add to Cart</button>
-                </form>
-            </div>
 
-        </article>
+            <!-- review form -->
+            <fieldset class = "shipping-information">
 
-        <aside></aside>
+            <label for="form-name">Your Name</label> 
+            <input type="text" id="form-name" placeholder="Name">
 
-    </section>
+            <label for="form-title">Review Title</label> 
+            <input type="text" id="form-title" placeholder="Title">
 
-    <h2>Reviews</h2>
+            <label for="form-review">Review</label>
+            <input type="text" id="form-review" placeholder="Review">
 
-    <div class = "write-a-review-form">
-    <!-- write a review button -->
-    <form method="post" action="product-review.html">
-        <button type = "submit" value = "Submit">Write a Review</button>
-    </form>
+            </fieldset>
+
+            <fieldset class = "form-submit">
+            <!-- submit form -->
+            <button type = "submit" value = "Submit">Submit Review</button>
+
+            </fieldset>
+
+        </form>
+
     </div>
-
-    <h4>2 reviews</h4>
-
-    <div class = "reviews-container">
-        <h4>★★★★★</h4>
-        <h4>Perfect for wearing everyday</h4>
-        <p>Jess M.</p>
-        <p>I highly recommend this necklace to everyone.  It has become a part of my daily outfits and always adds a special touch!</p>
-    </div>
-
-    <div class = "reviews-container">
-        <h4>★★★★☆</h4>
-        <h4>Great design and quality</h4>
-        <p>Erica R.</p>
-        <p>I loveeee this necklace and have gotten many compliments.  It's so cheap too, but still high quality for the price!  The only issue was that the shipping took longer than expected, but the product itself is perfect!</p>
-    </div>
-
-
     
 </body>
 </html>
