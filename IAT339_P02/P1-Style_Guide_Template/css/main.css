@@ -404,6 +404,16 @@ aside {
   }
 }
 
+.reviews-container {
+  /* border-top: 1px solid #39375b; */
+  border-bottom: 1px solid #39375b;
+  padding: 1rem; 
+}
+
+.write-a-review-form {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
 
 
 
