@@ -392,6 +392,17 @@ aside {
   margin-top: 1rem;
 }
 
+.product-image img {
+  width: 100%; 
+  height: auto;
+  min-width:20rem;
+}
+
+@media only screen and (max-width: 1023px) {
+  .product-details-container {
+      flex-direction: column;
+  }
+}
 
 
 
