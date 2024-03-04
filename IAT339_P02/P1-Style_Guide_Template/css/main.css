@@ -461,8 +461,12 @@ aside {
   vertical-align: top;
 }
 
-
-
+.hero-container img {
+  width: 100%; 
+  height: auto; 
+  display: block;
+  margin-top: 2rem;
+}
 
 /* 
   INTERACTIVE ELEMENTS -------------------
