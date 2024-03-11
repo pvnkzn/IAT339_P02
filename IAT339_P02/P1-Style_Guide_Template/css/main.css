@@ -491,25 +491,31 @@ aside {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer-and-cart .left {
+  flex: 1; 
+  text-align: left;
+}
+
+.footer-and-cart .center {
+  flex: 1; 
   text-align: center;
-  margin-right: 2rem;
+}
+
+.footer-and-cart .right {
+  flex: 1; 
+  text-align: right;
 }
 
 .footer-and-cart .in-text-link {
   font-family: 'Space Grotesk', 'Helvetica', sans-serif;
   text-decoration: none;
   font-weight: bold;
-
 }
 
 .footer-and-cart .in-text-link:hover, .in-text-link:focus {
   color: #DC6ACF;
-}
-
-.footer-contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 
